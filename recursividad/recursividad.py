@@ -68,15 +68,15 @@
 # resultado = fibonacci(13)
 # print(resultado)
 
-def fibonacci(value):
-    #condicion de corte
-    if value == 0:
-        return 0
-    if value == 1:
-        return 1
-    #llamada recursiva
-    return fibonacci(value-1) + fibonacci(value-2)
-resultado = fibonacci(130)
-print(resultado)
+# def fibonacci(value):
+#     #condicion de corte
+#     if value == 0:
+#         return 0
+#     if value == 1:
+#         return 1
+#     #llamada recursiva
+#     return fibonacci(value-1) + fibonacci(value-2)
+# resultado = fibonacci(130)
+# print(resultado)
 
 
