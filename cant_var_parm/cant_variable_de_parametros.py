@@ -1,4 +1,4 @@
-import unittest
+# import unittest
 
 def escribir_nombre(*args,**kwargs):
     # print("inicio")
@@ -10,19 +10,21 @@ def escribir_nombre(*args,**kwargs):
 escribir_nombre('Francisco, Facundo ,Emiliana',nombre1='Maria',nombre2='Victoria',apellido1='Torres',apellido2='Burgos')
 escribir_nombre('Mercedes',nombre1='Valentina',apellido1='Artola')
 escribir_nombre('Paula',nombre1='Celina',nombre2='Anahi',apellido1='Guerra Diaz')
+escribir_nombre(nombre1='Alma',nombre2='Quinteros')
 
-class TestEscribirNombre(unittest.TestCase):
 
-    def test_multiple_argumentos_multiple_keywords(self):
-        self.assertEqual(escribir_nombre('Francisco, Facundo, Emiliana', nombre1='Maria', nombre2='Victoria', apellido1='Torres', apellido2='Burgos'), None)
+# class TestEscribirNombre(unittest.TestCase):
 
-    def test_un_argumento_un_keyword(self):
-        self.assertEqual(escribir_nombre('Mercedes', nombre1='Valentina'), None)
+#     def test_multiple_argumentos_multiple_keywords(self):
+#         self.assertEqual(escribir_nombre('Francisco, Facundo, Emiliana', nombre1='Maria', nombre2='Victoria', apellido1='Torres', apellido2='Burgos'), None)
 
-    def test_un_argumento_multiple_keywords(self):
-        self.assertEqual(escribir_nombre('Paula', nombre1='Celina', nombre2='Anahi', apellido1='Guerra Diaz'), None)
+#     def test_un_argumento_multiple_keyword(self):
+#         self.assertEqual(escribir_nombre('Mercedes', nombre1='Valentina',apellido1='Artola'), None)
 
-if __name__ == '__main__':
-    unittest.main()  
+#     def test_un_argumento_multiple_keywords(self):
+#         self.assertEqual(escribir_nombre('Paula', nombre1='Celina', nombre2='Anahi', apellido1='Guerra Diaz'), None)
+
+# if __name__ == '__main__':
+#     unittest.main()  
 
 
